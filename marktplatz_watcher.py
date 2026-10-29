@@ -14,7 +14,7 @@ NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "")
 STATE_FILE = pathlib.Path(__file__).with_name("seen.json")
 
 # Nur diese Rubrik melden: "Biete", "Suche" oder None für beide
-KATEGORIE = "Biete"
+KATEGORIE = None
 
 # Optional: nur melden, wenn der Titel eines dieser Wörter enthält
 # (Kleinschreibung). Leer lassen = alles melden.
