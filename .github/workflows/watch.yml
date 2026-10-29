@@ -35,4 +35,4 @@ jobs:
           git config user.name "marktplatz-bot"
           git config user.email "bot@users.noreply.github.com"
           git add seen.json
-          git diff --staged --quiet || (git commit -m "Stand aktualisiert" && git push)
+          git diff --staged --quiet || (git commit -m "Stand aktualisiert" && git pull --rebase && git push)
